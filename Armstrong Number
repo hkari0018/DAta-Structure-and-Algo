@@ -1,0 +1,17 @@
+num = int(input("Enter a number"))   #input a number
+
+temp = num                            #store in temp variable
+sum=0                                 #initialize sum as 0
+while temp>0:                          #loop while temp>0
+
+
+   digit = temp %10                     #get last digit
+   sum += (digit **3)                   #add the cube of digit with Sum  
+   temp//=10                            #get next digit
+
+
+if(sum == num ):
+   print("is an armstrong number")
+
+else:
+   print("is not an armstrong number")
